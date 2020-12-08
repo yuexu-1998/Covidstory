@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/page_1.css">
+	<style type="text/css">
+		span{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="app">
+	<p class="p">Back</p>
+	<h2>Feb, 7 ,2020</h2>
+	<div class="mod">
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="box">
+		<div class="left">
+			<span style="display: none;">L</span>
+			<span style="display: none;"></span>
+		</div>
+		<img src="./images/2_9.jpg" class="img" style="display: none;">
+		<div class="text" style="display: none;height: 220px;">
+			<p>In December, doctors in Wuhan were puzzled by many pneumonia cases of unknown cause. On Dec 30, 2019, Doctor Li sent a private message to a group of fellow doctors warning them about a possible outbreak of an illness that resembled severe acute respiratory syndrome (SARS) in Wuhan, Hubei province, China, where he worked.</p>
+			<p>He was an ophthalmologist, working in Wuhan central hospital. He was one of the first people to recognise the outbreak of the novel coronavirus disease (COVID-19) in Wuhan, and he was also the first whistleblower to raise the alarm about a new virus (COVID-19) that was spreading in Wuhan. He died after becoming infected with SARS-COV-2 on Feb 7, 2020, aged 33 years. </p>
+		</div>
+		<h2 style="display: none;" id="h2">liwenliang</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.app .left span:nth-child(1)').css('display','inline-block')
+			console.log(1)
+		},500);
+
+		setTimeout(function(){
+			$('.app .left span:nth-child(2)').css('display','inline-block')
+		},1000)
+
+		setTimeout(function(){
+			$('.text').css('display','inline-block')
+			$('.img').css('display','inline-block')
+			$('#h2').css('display','inline-block')
+		},1500)
+
+		$('.p').click(function(){
+			window.location.href='./page.html'
+		})
+	})
+
+
+</script>
+</body>
+</html>

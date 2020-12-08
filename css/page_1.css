@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+@font-face{
+  font-family: Arista2;
+  src: url("../font/raanana.ttf");
+}
+
+html,body{height: 100%;width: 100%;margin:0;padding:0;}
+body{
+	background-color: #000;
+	color: #fff;
+}
+
+h2{
+	position: absolute;
+	transform: rotate(90deg);
+	top: 80px;
+	right: 10px;
+	color: rgb(159,74,67);
+	
+}
+.p{
+	font-weight: bold;
+	font-size: 18px;
+	color: rgb(159,74,67);
+	padding: 20px;
+}
+.app{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.mod{
+	position: relative;
+	width: 520px;
+	height: 300px;
+	margin: auto;
+	background-color: red;
+	top: 50%;
+	margin-top: -300px;
+}
+.mod img{
+	width: 98%;
+	float: right;
+	height: 100%;
+}
+
+.box{
+	position: relative;
+	width: 1200px;
+	height: 360px;
+	margin: auto;
+	top: 50%;
+	margin-top: -300px;
+	
+}
+.box img{
+	position: relative;
+	width: 270px;
+	height: 360px;
+	float: left;
+}
+.box div{
+	width: 560px;
+	height: 400px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.box div p{
+	margin-bottom: 40px;
+	font-size: 18px;
+}
+.box .text{
+	position: absolute;
+	height: 230px;
+	bottom: 0px;
+	right: 50px;
+}
+.box .text p{
+	font-size: 14px;
+}
+.box h2{
+	position: absolute;
+	transform: rotate(0deg);
+	font-size: 80px;
+	color: yellow;
+	font-weight: normal;
+	letter-spacing: 5px;
+	top: -20px;
+	left: 500px;
+}
+
+/* ++++++++++++ */
+.mod{
+	display: none;
+}
+
+
+.box .left{
+	position: relative;
+	float: left;
+	overflow-y: auto;
+	width: 300px;
+	color: yellow;
+	
+}
+.box .left span{
+	position: relative;
+	top: 40%;
+}
+.box .left span:nth-child(1){
+	font-family: "Arista2";
+	font-size:30px;
+	line-height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+.box .left span:nth-child(2){
+	display: inline-block;
+	width: 200px;
+	height: 2px;
+	background-color: yellow;
+}

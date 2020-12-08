@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/page_1.css">
+	<style type="text/css">
+		span{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="app">
+	<p class="p">Back</p>
+	<h2>Feb, 7 ,2020</h2>
+	<div class="mod">
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="box">
+		<div class="left">
+			<span style="display: none;">K</span>
+			<span style="display: none;"></span>
+		</div>
+		<img src="./images/2_6.jpg" class="img" style="display: none;">
+		<div class="text" style="display: none;height: 240px;">
+			<p>Kurt Julian was a diligent nurse and a witty, creative soul who loved working with wood and stained glass. As the first US surge of Covid-19 emerged in late February, he spent weeks tending to its victims. Then, in April, after working three nights in a row, Julian contracted the virus. “It was almost surreal, trying to think about this crazy new infection,” said his wife, Kathy Julian, also an ICU nurse. Her husband had ample protective gear and used it carefully, she said. When he first developed symptoms, Julian’s main concern was infecting his family, including his four children, aged 12 to 17 In April, he was taken by ambulance to his own ICU and, later, placed on a ventilator. In May, doctors at a trauma center used ECMO – extracorporeal membrane oxygenation – in a last-ditch effort to save him. Kathy and their oldest son were present as nurses withdraw life support. “I want people to get that this is real,” Kathy said. “Real people are dying.”</p>
+		</div>
+		<h2 style="display: none;" id="h2">Kurt Julian</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.app .left span:nth-child(1)').css('display','inline-block')
+			console.log(1)
+		},500);
+
+		setTimeout(function(){
+			$('.app .left span:nth-child(2)').css('display','inline-block')
+		},1000)
+
+		setTimeout(function(){
+			$('.text').css('display','inline-block')
+			$('.img').css('display','inline-block')
+			$('#h2').css('display','inline-block')
+		},1500)
+
+		$('.p').click(function(){
+			window.location.href='./page.html'
+		})
+	})
+
+
+</script>
+</body>
+</html>

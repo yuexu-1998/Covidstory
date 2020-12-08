@@ -1,0 +1,99 @@
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+html,body{height: 100%;width: 100%;margin:0;padding:0;}
+body{
+	/*background-image: url(../images/3_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	background-color: #000;
+}
+
+.app{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.mod{
+	width: 4800px;
+	height: 350px;
+	position: relative;
+	padding: 40px;
+	padding-left: 0px;
+	padding-right: 0px;
+	box-sizing: border-box;
+	background-color: yellow;
+	margin: auto;
+	top: 50%;
+	margin-top: -150px;
+}
+.app div:nth-child(1){
+	position: absolute;
+	width: 100%;
+	top: 100px;
+}
+.app div p{
+	color: rgb(235,108,73);
+	text-align: center;
+}
+.app div p:nth-child(1){
+	font-size: 36px;
+}
+.app div p:nth-child(2){
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+.mod img{
+	width: 200px;
+	height: 270px;
+}
+.div{
+	width: 100%;
+	height: 270px;
+	position: absolute;
+	top: 40px;
+}
+
+.div span{
+	display: inline-block;width: 200px;
+	height: 270px;
+	background-color: rgba(240,240,240,0.6);
+}
+.div span:hover{
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.name,.time{
+	color: #fff;
+}
+
+.copy p{
+	height: 35px;
+	line-height: 35px;
+}
+.copy p:nth-child(1){
+	font-size: 20px;
+}
+.copy p:nth-child(2){
+	font-size: 26px;
+}
+
+
+
+/*@media screen and (min-width:600) and (max-width:1550){
+	.copy{
+		position: absolute;
+		bottom: 0px;
+		text-align: center;
+		width: 100%;
+	}
+
+}*/

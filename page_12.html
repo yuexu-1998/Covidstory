@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/page_1.css">
+	<style type="text/css">
+		span{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="app">
+	<p class="p">Back</p>
+	<h2>Feb, 7 ,2020</h2>
+	<div class="mod">
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="box">
+		<div class="left">
+			<span style="display: none;">S</span>
+			<span style="display: none;"></span>
+		</div>
+		<img src="./images/2_12.jpg" class="img" style="display: none;">
+		<div class="text" style="display: none;height: 250px;">
+			<p>Patients always praised Sandra Hardy- Rogers was an amazing British lady, who was a whirlwind in the emergency department, caring for patients with a slightly rough-around-the-edges style that somehow made almost everyone smile. “There was nobody as good as her,” said Allyse Gombas, a colleague. About 5ft tall, Hardy-Rogers was “all spunk, all enthusiasm”.</p>
+			<p>Hardy-Rogers arrived in the United States as a young woman, working first as a nanny and then as a home health aide, then got a job at the hospital, eventually settling into an overnight shift in the emergency department. In late March, after she treated a patient tested positive, soonly she became sick and fought for about a month in the hospital’s intensive care unit before her organs shut down.</p>
+		</div>
+		<h2 style="display: none; font-size: 50px;" id="h2">Sandra Hardy Rogers</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.app .left span:nth-child(1)').css('display','inline-block')
+			console.log(1)
+		},500);
+
+		setTimeout(function(){
+			$('.app .left span:nth-child(2)').css('display','inline-block')
+		},1000)
+
+		setTimeout(function(){
+			$('.text').css('display','inline-block')
+			$('.img').css('display','inline-block')
+			$('#h2').css('display','inline-block')
+		},1500)
+
+		$('.p').click(function(){
+			window.location.href='./page.html'
+		})
+	})
+
+
+</script>
+</body>
+</html>

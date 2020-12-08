@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/page_1.css">
+	<style type="text/css">
+		span{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="app">
+	<p class="p">Back</p>
+	<h2>Feb, 7 ,2020</h2>
+	<div class="mod">
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="box">
+		<div class="left">
+			<span style="display: none;">D</span>
+			<span style="display: none;"></span>
+		</div>
+		<img src="./images/2_2.jpg" class="img" style="display: none;">
+		<div class="text" style="display: none;">
+			<p>Deborah Eubanks Stevers started her nursing career occupation about 15 years ago, and he turned to work in the progressive coronary care unit which was her favorite job, even though it wore her out. Northeast Georgia Health System confirmed that Debbie cared for Covid-19 patients. Elizabeth Larkins, director of critical care nursing, said some patients received care before anyone knew they had Covid-19, due to testing limitations and processing delays. Debbie had access to PPE from the beginning of the pandemic. But staffers were asked to reuse masks and face shields, following Centers for Disease Control and Prevention guidelines. One night, Stephen asked why she didn’t just stay home. “Is it worth it?” Her reply? “If I don’t go in, then who is going to do it?” She became ill in April and was put on a ventilator soon after. Weeks later, she had suffered brain damage from Covid-19 and chose to stop treatment. </p>
+		</div>
+		<h2 style="display: none; font-size: 45px;" id="h2">Deborah Eubanks Stevers</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.app .left span:nth-child(1)').css('display','inline-block')
+			console.log(1)
+		},500);
+
+		setTimeout(function(){
+			$('.app .left span:nth-child(2)').css('display','inline-block')
+		},1000)
+
+		setTimeout(function(){
+			$('.text').css('display','inline-block')
+			$('.img').css('display','inline-block')
+			$('#h2').css('display','inline-block')
+		},1500)
+
+		$('.p').click(function(){
+			window.location.href='./page.html'
+		})
+	})
+
+
+</script>
+</body>
+</html>

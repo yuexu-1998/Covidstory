@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/page_1.css">
+	<style type="text/css">
+		span{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div class="app">
+	<p class="p">Back</p>
+	<h2>Feb, 7 ,2020</h2>
+	<div class="mod">
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="box">
+		<div class="left">
+			<span style="display: none;">R</span>
+			<span style="display: none;"></span>
+		</div>
+		<img src="./images/2_12.jpg" class="img" style="display: none;">
+		<div class="text" style="display: none;height: 245px;">
+			<p>Robert Weber dreamed of being a firefighter when he was a little, and joined the town’s fire department in his 20. He also volunteered in the neighboring firehouse. People comment on him,  “He was a hometown hero, through and through.”  On 21 March 2020, Weber was climbing the engine and taking emergency calls, wearing head-to-toe protective equipment. Some of those calls were for people with Covid-19’s sky-high temperatures, burning lungs and searing leg pain. On 25 March, Weber’s fever ignited. A day later, he was hospitalized and, a week later, he was released. But that night, his blood oxygen level plummeted, his wife said. Weber was rushed to a different hospital, where he was ventilated. He battled for days. On 15 April, Arena’s phone rang. Come immediately, the doctor said. Her husband died before she turned her car into the hospital’s parking lot. “We will not forget him and his service,” Governor Phil Murphy said in a tribute. “I guess heaven needed a hero,” Arena said.
+</p>
+		</div>
+		<h2 style="display: none;" id="h2">Robert Weber</h2>
+	</div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$('.app .left span:nth-child(1)').css('display','inline-block')
+			console.log(1)
+		},500);
+
+		setTimeout(function(){
+			$('.app .left span:nth-child(2)').css('display','inline-block')
+		},1000)
+
+		setTimeout(function(){
+			$('.text').css('display','inline-block')
+			$('.img').css('display','inline-block')
+			$('#h2').css('display','inline-block')
+		},1500)
+
+		$('.p').click(function(){
+			window.location.href='./page.html'
+		})
+	})
+
+
+</script>
+</body>
+</html>
